@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="{{ '/' | relative_url }}">
+    <img src="{{ '/dutchsemcor_logo.jpg' | relative_url }}" alt="DutchSemCor logo">
+    <span>DutchSemCor</span>
+  </a>
+  <nav class="site-nav">
+    <a href="{{ '/' | relative_url }}"{% if page.url == '/' or page.url == '/index.html' %} class="active"{% endif %}>Home</a>
+    <a href="{{ '/annotated-data.html' | relative_url }}"{% if page.url contains 'annotated-data' %} class="active"{% endif %}>Annotated data</a>
+    <a href="{{ '/derived-data.html' | relative_url }}"{% if page.url contains 'derived-data' %} class="active"{% endif %}>Derived data</a>
+    <a href="{{ '/evaluation.html' | relative_url }}"{% if page.url contains 'evaluation' %} class="active"{% endif %}>Evaluation</a>
+    <a href="{{ '/software_tools.html' | relative_url }}"{% if page.url contains 'software_tools' %} class="active"{% endif %}>Software</a>
+    <a href="{{ '/publications.html' | relative_url }}"{% if page.url contains 'publications' %} class="active"{% endif %}>Publications</a>
+    <a href="{{ '/workshop.html' | relative_url }}"{% if page.url contains 'workshop' %} class="active"{% endif %}>Workshop</a>
+    <a href="{{ '/team.html' | relative_url }}"{% if page.url contains 'team' %} class="active"{% endif %}>Team</a>
+  </nav>
+</header>
+
+<main class="page">
+  {{ content }}
+</main>
+
+<footer class="site-footer">
+  &copy; DutchSemCor Project
+</footer>
+
+</body>
+</html>

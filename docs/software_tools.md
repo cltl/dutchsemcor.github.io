@@ -1,3 +1,7 @@
+---
+title: Software and Tools
+---
+
 # Software and Tools
 
 - [SAT](https://github.com/cltl/dutchsemcor/software_tools/SAT/SAT.zip)

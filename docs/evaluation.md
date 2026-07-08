@@ -1,3 +1,7 @@
+---
+title: Evaluation Results
+---
+
 #  Evaluation Results
 
 - [DOMAINS](https://github.com/cltl/dutchsemcor/data/evaluation_results/domains/3.1.DOMAIN_EVALUATION.zip)

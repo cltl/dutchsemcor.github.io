@@ -1,0 +1,9 @@
+title: DutchSemCor
+description: Homepage of the DutchSemCor project
+markdown: kramdown
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

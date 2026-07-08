@@ -1,3 +1,7 @@
+---
+title: Annotated Data
+---
+
 # Annotated Data
 
 - HUMAN
